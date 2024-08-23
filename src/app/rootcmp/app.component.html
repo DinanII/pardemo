@@ -1,0 +1,18 @@
+<app-basecard>
+  <h1>ParticleTS Demo</h1>
+</app-basecard>
+<app-basecard>
+  <h2>Intro</h2>
+  <p>
+    This relatively small Angular project acts as a example of an <a href='https://vincentgarreau.com/particles.js/' target="_blank">ParticleJS</a> implementation. It uses the <a href='https://www.npmjs.com/package/tsparticles' target="_blank">particleTS npm package</a>, and some configuration in this project. It's a great addition of every modern (frontend) website and -app. ParticleJS is also very configurable and available for a variety of frameworks like Angular, VueJS and React. and other places.
+  </p>
+  <p>
+    Side note: It was quite a hassle to get the configuration work, it seems like the examples online (from the docs, tutorials ect.) simply don't fit well with this setup.
+  </p>
+</app-basecard>
+<ngx-particles class="particleEl"
+  [id]="id"
+  [options]="particlesOptions"
+  (particlesLoaded)="particlesLoaded($event)"
+>
+</ngx-particles>
