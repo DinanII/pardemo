@@ -102,9 +102,6 @@ export class AppComponent {
   constructor(private readonly ngParticlesService: NgParticlesService) {}
 
   ngOnInit(): void {
-    const options = {
-      /* custom options */
-    };
     
     async function particlesInit(engine: Engine): Promise<void> {
       await loadFull(engine);
